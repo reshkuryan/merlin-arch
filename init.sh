@@ -17,7 +17,6 @@ pacstrap /mnt base linux linux-firmware sof-firmware neovim networkmanager btrfs
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
-
 arch-chroot /mnt /bin/bash <<EOF
 
 ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
